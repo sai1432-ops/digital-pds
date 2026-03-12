@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalPDS | User Login</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/auth.css" />
+</head>
+<body class="auth-body auth-user">
+  <div class="auth-page">
+    <div class="auth-shell">
+      <div class="auth-top-space"></div>
+
+      <div class="auth-icon-card user-theme">
+        <div class="auth-icon">U</div>
+      </div>
+
+      <div class="auth-header">
+        <h1 class="user-text">User Login</h1>
+        <p>Access your dental health dashboard</p>
+      </div>
+
+      <section class="auth-card">
+        <form id="userLoginForm" novalidate>
+          <div class="form-group">
+            <label for="user-email">Email</label>
+            <input
+              type="email"
+              id="user-email"
+              name="email"
+              placeholder="Enter email"
+              autocomplete="email"
+            />
+            <p class="field-error" id="user-email-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="user-password">Password</label>
+            <div class="password-wrapper">
+              <input
+                type="password"
+                id="user-password"
+                name="password"
+                placeholder="Enter password"
+                autocomplete="current-password"
+              />
+              <button type="button" class="toggle-password" data-target="user-password">
+                Show
+              </button>
+            </div>
+            <p class="field-error" id="user-password-error"></p>
+          </div>
+
+          <div class="inline-link-row">
+            <a href="#" class="text-link user-link">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login-btn user-btn" id="user-login-btn">
+            <span class="btn-text">Login</span>
+            <span class="btn-loader hidden"></span>
+          </button>
+
+          <div class="signup-row">
+            <span>Don't have an account?</span>
+            <a href="#" class="text-link user-link">Sign Up</a>
+          </div>
+        </form>
+      </section>
+
+      <div class="auth-bottom">
+        <a href="../../index.html" class="back-link user-link">Back to Role Selection</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/api.js"></script>
+  <script src="../../js/auth.js"></script>
+</body>
+</html>

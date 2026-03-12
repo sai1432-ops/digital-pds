@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigitalPDS | Select Role</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <main class="role-page">
+      <div class="background-glow glow-1"></div>
+      <div class="background-glow glow-2"></div>
+
+      <section class="hero-section">
+        <span class="brand-badge">DigitalPDS</span>
+        <h1>Select Your Role</h1>
+        <p>Choose how you want to continue</p>
+      </section>
+
+      <section class="roles-section">
+        <button class="role-card admin" onclick="goToRole('admin')">
+          <div class="role-icon-wrapper">
+            <span class="role-icon">A</span>
+          </div>
+
+          <div class="role-content">
+            <h2>Admin</h2>
+            <p>Oversee system operations and users</p>
+          </div>
+
+          <div class="role-arrow">›</div>
+        </button>
+
+        <button class="role-card user" onclick="goToRole('user')">
+          <div class="role-icon-wrapper">
+            <span class="role-icon">U</span>
+          </div>
+
+          <div class="role-content">
+            <h2>User</h2>
+            <p>Access family dental health services</p>
+          </div>
+
+          <div class="role-arrow">›</div>
+        </button>
+
+        <button class="role-card dealer" onclick="goToRole('dealer')">
+          <div class="role-icon-wrapper">
+            <span class="role-icon">D</span>
+          </div>
+
+          <div class="role-content">
+            <h2>Dealer</h2>
+            <p>Manage kit distribution and inventory</p>
+          </div>
+
+          <div class="role-arrow">›</div>
+        </button>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
