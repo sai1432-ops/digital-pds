@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Backend Ignores
+**/__pycache__/
+**/uploads/
+**/dealer_qr_codes/
+*.db
+*.sqlite
+*.log
+backend/legacy/
